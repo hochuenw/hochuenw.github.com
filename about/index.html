@@ -20,11 +20,15 @@
 
 
 
+
+
+
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
+  <meta name="google-site-verification" content="UA-115445777-1" />
 
 
 
@@ -38,9 +42,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -50,46 +51,25 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.0.5" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.5">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.5">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.5">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.5" color="#222">
 
 
 
 
 
 
-
-
-
-
-<meta name="description" content="如果只活一次就等于没有活过">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hochuen&#39;s Notes">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
-<meta property="og:site_name" content="Hochuen&#39;s Notes">
-<meta property="og:description" content="如果只活一次就等于没有活过">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-03-12T06:18:02.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hochuen&#39;s Notes">
-<meta name="twitter:description" content="如果只活一次就等于没有活过">
 
 
 
@@ -98,15 +78,13 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    version: '5.1.4',
+    version: '6.0.5',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -118,31 +96,78 @@
 </script>
 
 
+  
+
+
+
+
+  
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+<meta name="description" content="hochuen wong @ nju, cmu, petuum">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hochuen&#39;s Notes">
+<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta property="og:site_name" content="Hochuen&#39;s Notes">
+<meta property="og:description" content="hochuen wong @ nju, cmu, petuum">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-03-12T07:00:56.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hochuen&#39;s Notes">
+<meta name="twitter:description" content="hochuen wong @ nju, cmu, petuum">
+
+
+
+
+
 
   <link rel="canonical" href="http://yoursite.com/about/"/>
 
 
 
-
-
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
   <title> | Hochuen's Notes</title>
   
 
 
 
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-115445777-1', 'auto');
-  ga('send', 'pageview');
-</script>
 
 
 
 
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
 
 </head>
 
@@ -157,7 +182,7 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
+      <div class="header-inner"> <div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
@@ -191,61 +216,37 @@
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Home
-          </a>
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
+          <a href="/archives" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
         </li>
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            Categories
-          </a>
+          <a href="/categories" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories</a>
         </li>
       
         
         <li class="menu-item menu-item-epic">
-          <a href="/epic/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-grav"></i> <br />
-            
-            Epic
-          </a>
+          <a href="/epic" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-grav"></i> <br />Epic</a>
         </li>
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
-          </a>
+          <a href="/tags" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
         </li>
       
         
         <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            About
-          </a>
+          <a href="/about" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
         </li>
       
 
@@ -257,9 +258,15 @@
 </nav>
 
 
+  
+
+
 
  </div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
@@ -274,9 +281,15 @@
     <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline"></h1>
+<h1 class="post-title" itemprop="name headline"></h1>
+
+<div class="post-meta">
+  
+  
 
 
+
+</div>
 
 </header>
 
@@ -286,7 +299,8 @@
       <div class="post-body">
         
         
-          
+          <p>hochuen wong @ nju, cmu, petuum</p>
+
         
       </div>
       
@@ -294,15 +308,16 @@
       
     </div>
     
+
+
+
+    
     
     
   </div>
 
 
           </div>
-          
-
-
           
 
         </div>
@@ -337,51 +352,31 @@
               <p class="site-description motion-element" itemprop="description">如果只活一次就等于没有活过</p>
           </div>
 
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
+          
+            <nav class="site-state motion-element">
               
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
 
-            
-
-            
               
-              
-              <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">tags</span>
-                
-              </div>
-            
 
-          </nav>
+              
+            </nav>
+          
 
           
 
           
             <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/hochuenw" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://www.linkedin.com/in/hochuen-wong-bb5022b7" target="_blank" title="LinkedIn">
-                      
-                        <i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
-                  </span>
-                
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/hochuenw" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.linkedin.com/in/hochuen-wong-bb5022b7" target="_blank" title="LinkedIn"><i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
+                  
+                </span>
+              
             </div>
           
 
@@ -391,6 +386,9 @@
           
           
 
+          
+            
+          
           
 
         </div>
@@ -417,7 +415,11 @@
   <span class="author" itemprop="copyrightHolder">Hochuen Wong</span>
 
   
+
+  
 </div>
+
+
 
 
   <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
@@ -428,7 +430,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Mist</a> v6.0.5</div>
 
 
 
@@ -438,21 +440,20 @@
   <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   
-    <span class="site-uv">
+    <span class="site-uv" title="Total Visitors">
       <i class="fa fa-user"></i>
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      
     </span>
   
 
   
-    <span class="site-pv">
+    <span class="site-pv" title="Total Views">
       <i class="fa fa-eye"></i>
       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      
     </span>
   
 </div>
+
 
 
 
@@ -492,7 +493,11 @@
 
 
 
-  
+
+
+
+
+
 
 
 
@@ -512,16 +517,6 @@
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
     <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
@@ -530,18 +525,13 @@
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.5"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.5"></script>
 
 
 
@@ -549,30 +539,26 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.5"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.5"></script>
 
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.5"></script>
 
 
 
   
 
+  
+    <script id="dsq-count-scr" src="https://kinghocs.disqus.com/count.js" async></script>
+  
 
   
 
-    
-      <script id="dsq-count-scr" src="https://kinghocs.disqus.com/count.js" async></script>
-    
-
-    
-
-  
 
 
 
@@ -596,8 +582,6 @@
 
 
 
-
-
   
 
 
@@ -611,6 +595,10 @@
   
 
   
+
+  
+  
+
   
 
   
