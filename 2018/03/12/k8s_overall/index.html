@@ -102,26 +102,28 @@
 
 
   
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Kubernetes," />
 
 
-<meta name="description" content="如果只活一次就等于没有活过">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hochuen&#39;s Notes">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="开坑">
+<meta name="keywords" content="Kubernetes">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kubernetes overall architecture">
+<meta property="og:url" content="http://yoursite.com/2018/03/12/k8s_overall/index.html">
 <meta property="og:site_name" content="Hochuen&#39;s Notes">
-<meta property="og:description" content="如果只活一次就等于没有活过">
+<meta property="og:description" content="开坑">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-03-12T07:15:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hochuen&#39;s Notes">
-<meta name="twitter:description" content="如果只活一次就等于没有活过">
+<meta name="twitter:title" content="Kubernetes overall architecture">
+<meta name="twitter:description" content="开坑">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/12/k8s_overall/"/>
 
 
 
@@ -130,7 +132,7 @@
     sidebar: "",
   };
 </script>
-  <title>Hochuen's Notes</title>
+  <title>Kubernetes overall architecture | Hochuen's Notes</title>
   
 
 
@@ -177,8 +179,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -273,9 +274,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -307,9 +308,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/12/k8s_overall/" itemprop="url">Kubernetes overall architecture</a></h1>
+          <h1 class="post-title" itemprop="name headline">Kubernetes overall architecture</h1>
         
 
         <div class="post-meta">
@@ -369,6 +368,14 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             Views: 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
 
@@ -387,12 +394,8 @@
       
 
       
-        
-          
-            <p>开坑</p>
+        <p>开坑</p>
 
-          
-        
       
     </div>
 
@@ -405,19 +408,49 @@
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>据说这个按钮不能按</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Hochuen Wong WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Kubernetes/" rel="tag"># Kubernetes</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -427,14 +460,29 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -690,6 +738,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.5"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.5"></script>
+
+
 
   
 
@@ -704,6 +756,23 @@
     <script id="dsq-count-scr" src="https://kinghocs.disqus.com/count.js" async></script>
   
 
+  
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2018/03/12/k8s_overall/';
+        this.page.identifier = '2018/03/12/k8s_overall/';
+        this.page.title = 'Kubernetes overall architecture';
+      };
+      function loadComments () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://kinghocs.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+      
+        loadComments();
+      
+    </script>
   
 
 
